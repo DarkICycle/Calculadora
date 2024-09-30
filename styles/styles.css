@@ -1,0 +1,95 @@
+/* Estilos de la calculadora */
+.calculadora {
+    width: 300px;
+    margin: 100px auto;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+textarea {
+    width: 100%;
+    min-height: 50px; /* Altura mínima */
+    text-align: right;
+    font-size: 30px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none; /* Evitar que el usuario cambie manualmente el tamaño */
+    overflow: hidden; /* Para que no aparezcan barras de desplazamiento */
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    font-size: 20px;
+    background-color: #8d9298;
+    transition: background-color 0.5s ease, transform 0.5s ease; /* Transición suave para color y transformación */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.zero-button {
+    width: 130px;
+}
+
+button:hover {
+    background-color: #2a2c2d;
+    transform: scale(1.05); /* Aumenta el tamaño ligeramente */
+}
+
+button:active {
+    background-color: #2a2c2d;
+    
+}
+
+/* Haciendo la calculadora responsive */
+@media (max-width: 768px) {
+    .calculadora {
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    input {
+        font-size: 20px;
+        height: 40px;
+    }
+
+    button {
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    button.zero-button {
+        width: 110px;
+    }
+}
+
+@media (max-width: 480px) {
+    .calculadora {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    input {
+        font-size: 18px;
+        height: 35px;
+    }
+
+    button {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        margin: 3px;
+    }
+
+    button.zero-button {
+        width: 90px;
+    }
+}
